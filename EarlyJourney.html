@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOFI</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+            background-color: #f4EEFF;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: #333;
+            height: 50px;
+            font-size: 14px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: white;
+            padding: 5px 10px;
+            line-height: 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .bagian1 {
+            background-color: #FFE3E3;
+            background-size: cover;
+            min-height: 100px;
+            background-position: center;
+            padding: 20px;
+            margin-top: -10rem;
+        }
+
+        .card {
+            margin: 20px auto;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .bagian1 p {
+                font-size: 30px;
+            }
+
+            .card {
+                max-width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-nav .nav-item {
+                margin-left: 0 !important;
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .bagian1 p {
+                font-size: 24px;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 10px 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html" style="margin-left: 250px;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="EarlyJourney.html" style="margin-left: 250px;">Early Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Massage.html" style="margin-left: 250px;">Massage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Audio -->
+    <audio autoplay>
+        <source src="EMIN feat. JONY - КАМИН.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Section -->
+    <div class="bagian1">
+        <p class="text-center" style="font-family: Georgia; font-style: oblique; font-size: 50px; color: black; font-weight: bold; margin-top: 10rem;">Early Journey</p>
+
+        <!-- Card 1 -->
+        <div class="card" style="max-width: 770px; background-color: #C9E9D2; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Image/foto1.jpg" class="img-fluid rounded-start" alt="First Image" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">First</h5>
+                        <p class="card-text">Hai ini foto kamu waktu pertama kali kita ketemu. Walaupun pertemuan kita hanya melalui sebuah aplikasi.
+                            Waktu itu kamu kirimin aku foto ini, awalnya aku ngira kamu gabakal serius cuma sekedar berteman sehingga itu buat aku serasa
+                            cuma mau coba-coba aja. Ehh ternyata kamu serius pengen punya hubungan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="Image/foto1.jpg" class="img-fluid rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="max-width: 770px; background-color: #CDC1FF; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Second</h5>
+                        <p class="card-text">Kamu tau ngga kalau di awal itu aku masih belum bisa nerima kamu, sampai kamu usaha terus buat dapetin aku,
+                            dari situ aku mulai coba buat nerima kamu apalagi buat aku kamu itu termasuk orang unik, yang bisa bikin aku nyaman saat itu
+                            sampai dimana suatu saat kamu ngajak aku untuk punya hubungan dan aku inget banget kapan itu terjadi, bahkan sampai sekarang 
+                            aku masih ingat semua itu. Mungkin itu semua terlihat aneh, kamu belum kenal aku lebih jauh suatu saat kamu akan tau aku
+                            seperti apa.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="Image/foto13.jpg" class="img-fluid rounded-start" alt="Second Image" data-bs-toggle="modal" data-bs-target="#imageModal1" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="Image/foto13.jpg" class="img-fluid rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" style="max-width: 770px; background-color: #b1cede; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Image/foto12.jpg" class="img-fluid rounded-start" alt="Third Image" data-bs-toggle="modal" data-bs-target="#imageModal2" style="cursor: pointer;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Third</h5>
+                        <p class="card-text">Wkwk kalau kamu udah baca dari no 1-2 pasti aneh ya, abaikan aja. Kamu tau ngga kalau kadang aku pengen tau kapan kita jadian 
+                            aku tinggal liat info di foto ini karena itu bertepatan dimana kita punya hubungan, beruntungnya foto itu belum hilang waktu aku ganti hp.
+                            Cuma aku gtw kamu sendiri ingat atau engga. Tapi aku masih aja ngerasa kalau ga pantes buat kamu, aku masih banyak kurangnya jadi aku mencoba 
+                            bersikap biasa aja buat lihat kamu seberapa tulus nerima aku apa adanya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="Image/foto12.jpg" class="img-fluid rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #C9E9D2; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Four</h5>
+                        <p class="card-text">Haha yang lucunya kita saat itu sama-sama sibuk satu sama lain, kamu yang hanya bisa online saat tengah malam dan aku yang hanya bisa 
+                            dari sore sampai malam. Karena sebuah kondisi tersebut kita jadi kurang komunikasi satu sama lain, dan dari situ juga aku lebih sering ngerasa overthingking
+                            tapi wajar ga sih aku overthingking yang berarti pada saat itu aku udah mulai suka dan nerima kamu. Mungkin dari situ juga sikap aku kadang bikin kamu ga 
+                            nyaman.</p>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="card" style="max-width: 770px; background-color: #CDC1FF; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Five</h5>
+                        <p class="card-text">Ketika hubungan kita sudah mencapai bebrapa bulan kita sudah mulai saling terbuka satu sama lain mulai dari cerita tentang diri kita, 
+                            keluarga sampai terkadang kita membicarakan masalah kita masing-masing.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #b1cede; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Six</h5>
+                        <p class="card-text">Sampai suatu saat kamu mulai jarang ada kabar, bahkan sekalipun ada bisa saja kamu membalas beberapa hari kemudian atau bahkan setelah satu minggu.
+                            Kadang aku sempat mikir apa kamu "pergi" (seharusnya kamu paham arti kata pergi bagi aku), kamu tau ga sih aku selalu nungguin kamu sampai aku mikir "apa hari ini bakalan 
+                            dibales atau aku harus nunggu lagi".</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #C9E9D2; margin-left: -0.1rem; margin-top: 2rem; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Seven</h5>
+                        <p class="card-text">Kalau aja pada waktu itu aku cumaa main-main mungkin udah dari awal kamu sering hilang aku bakalan ninggalin kamu tapi nyatanya aku nunggu kan walau 
+                            jarang ada kabar. Padahal dari awal aku udah bilang "aku ga perlu dikabari 24 jam karena aku tau duniamu bukan hanya tentang diriku, tetapi minimal sehari sekali itu 
+                            tidak apa-apa atau mau off lama asalkan pamit bilang aja mau aku baca kapan itu urusan nanti."</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #CDC1FF; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Eight</h5>
+                        <p class="card-text">Sampai tiba dimana kamu benar-benar hilang tanpa kabar sedikitpun bahkan pesan chat kamu aja diatur 24 jam langsung hilang, jadi kayak percuma aku chat kamu
+                            mau dibaca kapan sama aja percuma orang udah keburu hilang. Dari situ juga aku udah males buat chat kamu sampai aku mutusin buat nunggu kabar lagi dari kamu. Ternyata ga taunya
+                            kamu ga ada kabar selama 3 bulan lebih.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #b1cede; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Nine</h5>
+                        <p class="card-text">Kalau udah baca sampai sini jangan berhenti dulu ya. Oh iya kamu tau ngga selama 3 bulan kamu hilang aku gtw harus gimana aku mau tanya ke siapapun juga ga bisa
+                            sekalipun temen-temen aku nyuruh buat lupain kamu dan buka hati buat orang lain itu semua ga akan bisa. Temen-temen yang lain tau kalau aku masih ada hubungan sama kamu, 
+                            tapi aku kalau suka ke orang itu berarti cuma sekedar mengagumi berbeda waktu sama kamu itu aku bukan suka lagi 
+                            melainkan udah sayang banget sama kamu aku selalu nganggap kamu itu rumahku disaat kamu tau semua permasalahanku.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #C9E9D2; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Ten</h5>
+                        <p class="card-text">Jangan marah dulu ya buat yang di no 9 hehe. Itu semua bukan berarti aku emang ga serius sama kamu, tapi awalnya juga aku pikir bakalan bisa lupain kamu ternyata 
+                            salah aku gabisa ganti posisi orang yang aku sayang dan dari situ aku baru sadar kalau aku palingan cuma bisa mengagumi orang lain, bukan mencari pengganti yang lain. Jadinya 
+                            aku cuma nunggu kamu selama itu Jadi harusnya kamu udah paham sama semua ini.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #CDC1FF; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Eleven</h5>
+                        <p class="card-text">Sampai tiba waktunya kamu mulai ada tanda-tanda akan online walaupun kamu belum ngasih aku kabar, malahan temen kamu yang chat aku memang aku bilang kalau udah ga 
+                            punya rasa sama kamu padahal itu semua bohong aku masih sayang banget sama kamu, hampir setiap malam aku nangis cuma buat nunggu kabar dari kamu walaupun pada saat itu aku bener-bener
+                            kecewa sama kamu. Tapi aku gabisa bohong kalau pada saat kamu kembali menghubungiku aku seneng banget hanya saja aku juga sangat kecewa.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #b1cede; margin-top: 2rem; margin-right: -0.1rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Twelve</h5>
+                        <p class="card-text">Pada saat itu juga kamu mulai cerita apa alasan kamu menghilang selama ini, bahkan kamu ga marah waktu aku bilang kalau aku udah ga nganggap kalau masih ada hubungan
+                            itu juga salah satu alasan aku kenapa bisa sesayang ini sama kamu. Kamu selalu ngalah ngehadapin sikapku yang sering egois kamu sabar banget hadapin aku. Dari situ juga aku ga tega buat 
+                            ngabaikan kamu dan selalu respon chat kamu. Harusnya kamu udah sadar dari awal yang aku ijinin kamu buat chat aku ga mungkin kan kalau aku udah ga sayang sama kamu masih biarin kamu chat 
+                            aku seenaknya.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #C9E9D2; margin-left: -0.1rem; margin-top: 2rem;">
+            <div class="row g-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Thirteen</h5>
+                        <p class="card-text">Ternyata itu semua ga berlangsung lama hanya dalam hitungan hari saja, karena kamu akan kembali melaksanakan tugas yang baru saja kamu selesaikan setengahnya. Beruntungnya
+                            kamu tidak lupa memberi kabar bahwa kamu akan pergi kembali dan aku juga masih sempat untuk mengembalikan hubungan kita yang sempat renggang. Kamu bilang sama aku kemungkinan 
+                            besar kamu akan kembali paling cepat januari 2025. </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card" style="max-width: 770px; background-color: #CDC1FF; margin-top: 2rem;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Image/foto8.jpg" class="img-fluid rounded-start" alt="First Image" data-bs-toggle="modal" data-bs-target="#imageModal14" style="cursor: pointer;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Fourteen</h5>
+                        <p class="card-text">Dan aku janji akan nungguin kamu sampai kamu kembali. Hanya saja jika pada saat kamu kembali kamu sudah melupakanku, aku akan menerima semua keputusan dari kamu. Pesanku
+                            semoga kamu sehat selalu dan jika kamu menemukan orang lain yang lebih baik dari diriku semoga kamu bahagia. Aku mencintaimu, tetapi aku tidak akan memaksamu untuk memiliki perasaan yang 
+                            sama itu semua tergantung padamu, hanya saja sampaikan juga padaku jika kamu sudah menemukan orang itu maka saat itu juga peranku disini sudah habis dan aku akan mundur. Maaf kalau selama ini
+                            aku masih banyak salah sama kamu akan akan selalu memperbaiki semua kesalahanku. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="Image/foto8.jpg" class="img-fluid rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
